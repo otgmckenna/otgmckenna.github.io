@@ -9,9 +9,14 @@ body {
 
 #top-name a {
   text-decoration: none;
-  color: black;
+  color: rgb(0, 0, 0);
   font-weight: 400;
   font-size: 64px;
+}
+
+#top-name a:hover {
+  color:rgb(78, 78, 78);
+  transition: .25s;
 }
 
 #site-nav {
@@ -100,7 +105,8 @@ body {
 
 .column img:hover {
   opacity: 0.75;
-  transition: .25s
+  transition: .25s;
+  cursor: zoom-in
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
