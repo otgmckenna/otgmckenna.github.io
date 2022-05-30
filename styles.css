@@ -2,6 +2,68 @@ body {
   font-family: Arboria, sans-serif;
 }
 
+#index-intro {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+  margin-top: 5%;
+}
+
+#index-intro a {
+  color: orange;
+  font-weight: 400;
+}
+
+#index-intro a:hover {
+  text-decoration: none;
+}
+
+#index-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  gap: 5%;
+}
+
+#index-nav h2 {
+  font-weight: 300;
+}
+
+#index-nav a {
+  color: black;
+  text-decoration: none;
+}
+
+#index-name {
+  color: orange;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: black;
+  padding: 2.5px;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 #top-name {
   display: flex;
   justify-content: center;
@@ -123,4 +185,28 @@ body {
     flex: 100%;
     max-width: 95%;
   }
+}
+
+#footer-content {
+  display: flex;
+  justify-content: center;
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#footer-content h1 {
+  font-size: 18px;
+  right: 0;
+  font-weight: 400;
+}
+
+#footer-content h1 a {
+  color: black;
+  text-decoration: none;
+}
+
+#footer-content h1 a:hover {
+  color:rgb(78, 78, 78);
 }
